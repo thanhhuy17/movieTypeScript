@@ -14,7 +14,7 @@ const initialState : initialStateMovie = {
 
 export const movieoSlice = createSlice({
     name: 'movie',
-    initialState,
+    initialState: initialState,
     reducers:{
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         setBannerData: (state, action: PayloadAction<any>)=>{
