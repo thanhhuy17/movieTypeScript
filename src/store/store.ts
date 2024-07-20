@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { movieoSlice } from "../reducers/movie";
+import { movieoSlice, initialStateMovie } from "../reducers/movie";
 
-interface RootState {
-    movie: ReturnType<typeof movieoSlice.reducer>;
+
+// Cập nhật RootState để sử dụng initialStateMovie
+export interface RootState {
+    movie: initialStateMovie; // Sử dụng initialStateMovie
 }
 
 const store = configureStore<RootState>({
