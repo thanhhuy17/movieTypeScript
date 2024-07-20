@@ -13,7 +13,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     fetchTrendingData().then((res) =>
-      // console.log("ResponseHuy: ",res?.data.results)
+      // console.log("Response Data: ", res?.data?.results)
       dispatch(setBannerData(res?.data?.results))
     );
     fetchConfiguration().then((res) => {

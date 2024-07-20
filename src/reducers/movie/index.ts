@@ -1,29 +1,29 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface initialStateMovie{
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    bannerData: any ,
-    imageUrl: string
 
+export interface initialStateMovie {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    bannerData: any[],
+    imageUrl: string
 }
 
-const initialState : initialStateMovie = {
-    bannerData : [],
-    imageUrl : ''
+const initialState: initialStateMovie = {
+    bannerData: [],
+    imageUrl: ''
 };
 
 export const movieoSlice = createSlice({
     name: 'movie',
-    initialState: initialState,
-    reducers:{
+    initialState,
+    reducers: {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        setBannerData: (state, action: PayloadAction<any>)=>{
+        setBannerData: (state, action: PayloadAction<any>) => {
             state.bannerData = action.payload
         },
-        setImageUrl:(state, action: PayloadAction<string>)=>{
+        setImageUrl: (state, action: PayloadAction<string>) => {
             state.imageUrl = action.payload
         }
-        
+
     }
 })
 
