@@ -38,7 +38,7 @@ const BannerHome = () => {
   return (
     <section className="w-full h-full">
       <div className="flex min-h-full max-h-[95vh] overflow-hidden">
-        {bannerData.map((data, index) => {
+        {bannerData?.map((data, index) => {
           return (
             <div
               key={data.id + "BannerHome" + index}
@@ -47,7 +47,7 @@ const BannerHome = () => {
             >
               <div className="w-full h-full">
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-full z`object-cover"
                   src={imgUrl + data?.backdrop_path}
                   alt=""
                 />

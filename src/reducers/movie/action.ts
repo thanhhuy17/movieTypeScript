@@ -1,4 +1,4 @@
-// có các hành động từ UI hay API thì để vào actions
+// Có các hành động từ UI hay API thì để vào actions
 import axios from "axios";
 // Lấy Link hình ảnh
 export const fetchTrendingData = async () => {

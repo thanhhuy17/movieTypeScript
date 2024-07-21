@@ -12,7 +12,7 @@ axios.defaults.baseURL = "https://api.themoviedb.org/3"; // Đường dẫn tư�
 axios.defaults.headers.common["Authorization"] = `Bearer ${
   import.meta.env.VITE_ACCESS_TOKEN
 }`;
-
+// console.log("Key : ", key);
 ReactDOM.createRoot(document.getElementById("root")!).render(
   // <React.StrictMode>
   <Provider store={store}>

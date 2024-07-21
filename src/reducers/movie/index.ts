@@ -44,7 +44,7 @@ interface BannerItem {
   title: string;
   overview: string;
   vote_average: number;
-  popularity: number
+  popularity: number,
 
 
 }
