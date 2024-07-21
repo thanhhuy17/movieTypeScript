@@ -45,8 +45,6 @@ interface BannerItem {
   overview: string;
   vote_average: number;
   popularity: number,
-
-
 }
 
 export interface initialStateMovie {

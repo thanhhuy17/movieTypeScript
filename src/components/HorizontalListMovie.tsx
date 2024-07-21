@@ -15,14 +15,14 @@ const HorizontalListMovie: React.FC<TypeHorizontal> = ({
   media_type,
 }) => {
   const trendingLength = data?.length;
-  const containerRef = useRef();
+  const containerRef = useRef<HTMLDivElement>(null);
 
   //Next Card =>>
   const handleNext = () => {
-    containerRef.current.scrollLeft += 254 * 4;
+    containerRef.current.scrollLeft += 254 * 5;
   };
   const handlePrevious = () => {
-    containerRef.current.scrollLeft -= 254 * 4;
+    containerRef.current.scrollLeft -= 254 * 5;
   };
   return (
     <div>

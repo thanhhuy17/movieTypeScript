@@ -4,11 +4,14 @@ import { RootState } from "../store/store";
 import { useInitialPage } from "../Hooks/useInitialPage";
 import moment from "moment";
 
+export type MediaType = "movie" | "tv";
+
 interface TypeCard {
   data: any;
-  index: number;
-  trending: boolean;
-  media_type?: "movie" | "tv";
+  index?: number;
+  trending?: boolean;
+  media_type?: MediaType;
+  // media_type?: string | undefined ;
 }
 
 const Card: React.FC<TypeCard> = ({ data, index, trending, media_type }) => {
