@@ -14,11 +14,8 @@ axios.defaults.headers.common["Authorization"] = `Bearer ${
 }`;
 // console.log("Key : ", key);
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  // <React.StrictMode>
   <Provider store={store}>
     {/* <App /> */}
     <RouterProvider router={router} />
   </Provider>
-
-  // </React.StrictMode>,
 );

@@ -4,7 +4,7 @@ import { RootState } from "../store/store";
 import { useInitialPage } from "../Hooks/useInitialPage";
 import moment from "moment";
 
-export type MediaType = "movie" | "tv";
+export type MediaType = "movie" | "tv" | string | undefined;
 
 interface TypeCard {
   data: any;

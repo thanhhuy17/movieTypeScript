@@ -3,10 +3,11 @@ import Card from "./Card";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 interface TypeHorizontal {
-  data: any[];
+  data: any[] | undefined;
   heading: string;
   trending?: boolean;
-  media_type?: "movie" | "tv";
+  media_type?: "movie" | "tv" | string | undefined;
+  // media_type?: string  | undefined;
 }
 const HorizontalListMovie: React.FC<TypeHorizontal> = ({
   data,
@@ -36,7 +37,7 @@ const HorizontalListMovie: React.FC<TypeHorizontal> = ({
             ref={containerRef}
             className={`relative grid grid-cols-[repeat(${trendingLength},230px)] gap-6 grid-flow-col overflow-x-scroll z-10 scroll-smooth transition-all scrolbar-none`}
           >
-            {data?.map((res, index) => {
+            {data?.map((res: any, index: number) => {
               return (
                 <Card
                   key={res.id}
