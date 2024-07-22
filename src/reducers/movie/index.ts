@@ -31,7 +31,6 @@
 // export default movieoSlice.reducer;
 
 
-//////////----------------------------------------------------------
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // Định nghĩa type cho mỗi phần tử trong bannerData
@@ -50,7 +49,7 @@ interface BannerItem {
 export interface initialStateMovie {
   bannerData: BannerItem[]; // Sử dụng BannerItem[] 
   imageUrl: string;
-  
+
 }
 
 const initialState: initialStateMovie = {

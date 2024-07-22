@@ -16,7 +16,7 @@ const BannerHome = () => {
     }
   };
 
-  // Privious Banner Image
+  // Previous Banner Image
   const handlePrevious = () => {
     if (currentImg > 0) {
       setCurrenImg((prev) => prev - 1);
